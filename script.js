@@ -64,3 +64,17 @@ liItem.forEach(li => {
         })
     }
 });
+
+// popup card
+
+function togglePopup(){
+  document.getElementById("popup-1").classList.toggle("active");
+}
+
+function togglePopupSecond(){
+  document.getElementById("popup-2").classList.toggle("active");
+}
+
+function togglePopupThree(){
+  document.getElementById("popup-3").classList.toggle("active");
+}

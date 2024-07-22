@@ -5,7 +5,184 @@
 }
 
 
-ul{
+.div1{
+    display: flex;
+    position: relative;
+}
+
+.div1 .test1,
+.div1 .test2{
+    margin: 5px;
+    width: 700px;
+    height: 600px;
+    border: 1px solid #000;
+}
+
+.div1 .test1{
+    transform: translateX(7px) rotate(-2deg);
+    z-index: 6;
+}
+
+.div1 .test2{
+    z-index: 3;
+}
+
+
+/* .book{
+    margin-top: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.book .book-cards .first-image{background-image: url("./poze/card-s1.jpg" );}
+
+.book .book-cards .second-image{background-image: url("./poze/card-s2.jpg" );}
+
+.book .book-cards .three-image{background-image: url("./poze/slider-bg2.png");}
+
+.book .book-cards .first-image,
+.book .book-cards .second-image,
+.book .book-cards .three-image{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    width: 320px;
+    height: 300px;
+}
+
+.book .book-cards h3{padding: 30px 0 7px 0;}
+
+.book .book-cards .text-card{
+    color: #646464;
+    padding: 10px 0;
+    font-size: 13px;
+}
+
+.book .book-cards .book-now{
+    background-color: rgb(215, 140, 0);
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 10px 0 30px 0;
+    border: none;
+}
+
+.book .book-cards .book-now:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.book .book-cards {
+   width: 320px;
+   margin: 0 30px;
+   box-shadow: 5px 5px 30px #c5c5c5;
+}
+
+
+.popup .overlay {
+    position:absolute;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #ffffff;
+    z-index: 1;
+    display: none;
+    text-align: center;
+}
+
+.popup .content {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #ffffff;
+    z-index: 2;
+    text-align: center;
+}
+
+.popup .close-btn {
+    cursor: pointer;
+    position:absolute;
+    top: 125px; 
+    
+    left: 20px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.popup .close-btn button{
+    border: none;
+    background-color: #ffffff;
+}
+
+.popup .close-btn button:hover{opacity: 0.8;}
+
+.popup .overlay .content .after-image{margin-top: 180px;}
+
+.popup .after-image h1{
+    font-size: 28px;
+    padding:20px;
+}
+
+.popup .after-image p{padding: 20px;}
+
+.popup .after-image .card-price{
+    color: #646464;
+    padding: 20px;
+}
+
+.popup .after-image .card-button1,
+.popup .after-image .card-button2{
+    border: none;
+    background-color: rgb(215, 140, 0);
+    padding: 8px 24px;
+    color: #ffffff;
+}
+
+.popup .product-img1 img{
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.popup #card-text{
+    width: 500px;
+    margin: 20px auto 20px auto;
+    text-align: center;
+}
+
+.content h3{
+    margin: auto;
+    padding-top: 20px;
+    font-size: 25px;
+    border-top: 2px solid rgb(215, 140, 0);
+    width: 350px;
+
+}
+
+.popup .after-image .card-button2{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.popup.active .overlay{display: block;}
+
+.popup.active .content{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+} */
+
+
+
+
+
+/* ul{
     display: flex;
     justify-content: center;
     margin-top: 10px;
@@ -93,6 +270,6 @@ ul li.active{
 .div11{
     grid-column: 1;
     grid-row: 12 / 15;
-}   
+}    */
 
 
