@@ -1,9 +1,5 @@
 'use strict';
-// navbar scrool
-window.addEventListener("scroll", function(){
-  let div = document.querySelector("div");
-  div.classList.toggle("sticky", window.scrollY > 580);
-});
+
 
 // scrool butoon top
 
@@ -35,7 +31,7 @@ window.addEventListener('focus', () => {
 const socialMedia = document.querySelector(".social-media");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 580){
+  if (window.scrollY > 100){
     socialMedia.classList.add("active");
   }else{
     socialMedia.classList.remove("active");
@@ -44,26 +40,26 @@ window.addEventListener("scroll", () => {
 
 // Gallery photos
 
-// const liItem = document.querySelectorAll("ul li");
-// const imgItem = document.querySelectorAll(".product img");
+const liItem = document.querySelectorAll("ul li");
+const imgItem = document.querySelectorAll(".product img");
 
 
-// liItem.forEach(li => {
-//     li.onclick = function() {
-//         liItem.forEach(li => {
-//             li.className = "";
-//         })
-//         li.className = "active";
+liItem.forEach(li => {
+    li.onclick = function() {
+        liItem.forEach(li => {
+            li.className = "";
+        })
+        li.className = "active";
 
-//         const value = li.textContent;
-//         imgItem.forEach(img => {
-//             img.style.display = "none";
-//             if(img.getAttribute("data-filter") == value.toLowerCase() || value == "All") {
-//                 img.style.display = "block";
-//             }
-//         })
-//     }
-// });
+        const value = li.textContent;
+        imgItem.forEach(img => {
+            img.style.display = "none";
+            if(img.getAttribute("data-filter") == value.toLowerCase() || value == "All") {
+                img.style.display = "block";
+            }
+        })
+    }
+});
 
 // popup card
 

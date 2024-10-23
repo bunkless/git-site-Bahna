@@ -192,6 +192,7 @@ a{text-decoration: none;}
 .meet {
     text-align: center;
     margin-top: 100px;
+
 }
 
 .meet h3{
@@ -509,13 +510,17 @@ a{text-decoration: none;}
     font-size: 13px;
 }
 
-.book .book-cards .book-now{
+.book .book-cards .book-now {
     background-color: rgb(215, 140, 0);
     color: #ffffff;
     padding: 10px 20px;
     margin: 10px 0 30px 0;
     border: none;
 }
+
+ 
+.book .book-cards .book-now a{color: #ffffff;}
+
 
 .book .book-cards .book-now:hover{
     cursor: pointer;
@@ -530,44 +535,39 @@ a{text-decoration: none;}
 
 
 .popup .overlay {
-    position:absolute;
     overflow: auto;
-    top: 0;
-    left: 0;
     width: 100vw;
-    height: 600vh;
+    height: 100vh;
     background: #ffffff;
-    z-index: 1;
-    display: none;
     text-align: center;
 }
-
+    
 .popup .content {
-    position: absolute;
     top: 70%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0);
     background: #ffffff;
-    z-index: 2;
     text-align: center;
 }
 
 .popup .close-btn {
     cursor: pointer;
-    position:absolute;
-    top: 125px; 
-    
-    left: 20px;
+    position:relative;
+    top: 55px; 
+    left: 400px;
     background: #ffffff;
-    text-align: center;
+    text-align: left;
 }
+
+.popup .close-btn a{color: #000000;}
 
 .popup .close-btn button{
     border: none;
     background-color: #ffffff;
 }
 
-.popup .close-btn button:hover{opacity: 0.8;}
+.popup .close-btn button:hover{
+    border-bottom: 1px solid #000000;
+}
 
 .popup .overlay .content .after-image{margin-top: 180px;}
 
@@ -603,9 +603,9 @@ a{text-decoration: none;}
     width: 500px;
     margin: 20px auto 20px auto;
     text-align: center;
-}
+} 
 
-.content h3{
+ .content h3{
     margin: auto;
     padding-top: 20px;
     font-size: 25px;
@@ -619,12 +619,6 @@ a{text-decoration: none;}
     cursor: pointer;
 }
 
-.popup.active .overlay{display: block;}
-
-.popup.active .content{
-    transition: all 300ms ease-in-out;
-    transform: translate(-50%, -50%) scale(1);
-}
 
 /* contact book */
 
@@ -705,6 +699,16 @@ a{text-decoration: none;}
 .container-book .second-page .contact-number input,
 .container-book .second-page .contact-textarea textarea{width: 92%;}
 
+.container-book .second-page .contact-textarea{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-book .second-page .contact-textarea label{
+    margin: 0 20px;
+    color: #717171;
+}
+
 .container-book .second-page .contact-textarea textarea{
     resize: none;
     height:200px;
@@ -714,7 +718,7 @@ a{text-decoration: none;}
     color: #000000;
     background-color: #ffffff;
     padding: 15px 30px;
-    margin: auto 20px;
+    margin: 0 20px;
 }
 
 .container-book .second-page button:hover{
@@ -725,12 +729,12 @@ a{text-decoration: none;}
 
 /* button up */
 #my-btn{
-    border: none;
     text-align: center;
     margin-top: 150px;   
     }
 
 #my-btn button{
+    border: none;
     text-align: center;
     background-color: #a9a0a0;
     width: 50px;
@@ -768,7 +772,6 @@ a{text-decoration: none;}
     font-weight: 700;
     font-style: normal;
    font-size: 20px;
-   filter: drop-shadow(4px 4px 8px #555);
 }
 
 .text-orange{color:orange;}

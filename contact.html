@@ -41,7 +41,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
    </nav>
 
    <!-- contact-book -->
-
+<form>
     <div class="container-book">
         <div class="first-page">
             <h1>Get in touch</h1>
@@ -58,15 +58,16 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
             <input type="email" placeholder="E-mail">
           </div>
           <div class="contact-number">
-          <input type="text"  placeholder="Number">
+          <input type="tel" placeholder="Number">
         </div>
         <div class="contact-textarea">
-          <textarea name="comment" placeholder="I'd like to chat about"></textarea>
+          <label for="fcomment">I'd like to chat about:</label><br>
+          <textarea name="comment" id="fcomment"></textarea>
           </div>
           <button>SEND MESSAGE</button>
         </div>
     </div>
-
+</form>
    <!-- Button scrool -->
 <div id="my-btn">
     <button><i class="fa-solid fa-chevron-up fa-2x"></i></button>
@@ -121,6 +122,6 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="rest.js"></script>
 </body>
 </html>

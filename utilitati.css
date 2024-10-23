@@ -342,12 +342,12 @@ grid-row: 5 / 8;
 
 /* button up */
 #my-btn{
-    border: none;
     text-align: center;
     margin-top: 150px;   
     }
 
 #my-btn button{
+    border: none;
     text-align: center;
     background-color: #a9a0a0;
     width: 50px;
@@ -385,7 +385,7 @@ grid-row: 5 / 8;
     font-weight: 700;
     font-style: normal;
    font-size: 20px;
-   filter: drop-shadow(4px 4px 8px #555);
+   /* filter: drop-shadow(4px 4px 8px #555); */
 }
 
 .text-orange{color:orange;}
