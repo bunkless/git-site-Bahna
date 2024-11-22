@@ -41,25 +41,30 @@ window.addEventListener("scroll", () => {
 // Gallery photos
 
 const liItem = document.querySelectorAll("ul li");
-const imgItem = document.querySelectorAll(".product img");
-
+const imgItem = document.querySelectorAll(".product div"); // Lucrăm cu div-urile, nu doar cu img
 
 liItem.forEach(li => {
-    li.onclick = function() {
-        liItem.forEach(li => {
-            li.className = "";
-        })
+    li.addEventListener("click", () => {
+        // Resetează clasa activă pentru toate butoanele
+        liItem.forEach(li => li.className = "");
         li.className = "active";
 
-        const value = li.textContent;
-        imgItem.forEach(img => {
-            img.style.display = "none";
-            if(img.getAttribute("data-filter") == value.toLowerCase() || value == "All") {
-                img.style.display = "block";
+        // Obține categoria selectată
+        const value = li.textContent.trim().toLowerCase();
+
+        // Filtrează imaginile (ascunde/afișează div-urile din grilă)
+        imgItem.forEach(div => {
+            const filter = div.querySelector("img").getAttribute("data-filter").toLowerCase();
+            if (filter === value || value === "all") {
+                div.style.display = "block"; // Afișează div-ul
+            } else {
+                div.style.display = "none"; // Ascunde div-ul
             }
-        })
-    }
+        });
+    });
 });
+
+
 
 // popup card
 
